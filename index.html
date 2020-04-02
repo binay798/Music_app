@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <div class="top" style="background-image: url('music_background.jpg');background-size:cover;">
+                <h2>Music App</h2>
+                <audio id="player" ontimeupdate="updateProgress()">
+                    <source id="source" src="songs/Kho Gaye Hum Kahan.mp3">
+                </audio>
+            </div>
+            <div class="bottom">
+                <progress id="progress" value="0" max="100"></progress><br>
+                <i class="fa fa-play-circle fa-2x" style="color:black;" onclick="play_pause()"></i>
+                
+                
+                <i class="fa fa-volume-down fa-2x"></i>
+                <input type="range" id="volume" value="0" min="0" max="1" step="0.001">
+                <i class="fa fa-volume-up fa-2x"></i>
+            </div>
+
+            <div class="middle"></div>
+
+            
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
