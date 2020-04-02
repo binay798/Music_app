@@ -46,3 +46,11 @@ function play_pause(){
     }
 }
 
+function volume(){
+    let range = document.querySelector("#volume");
+    player.volume = range.value;
+}
+
+function displayVolume(){
+    document.querySelector("#volume").style.display = "block";
+}

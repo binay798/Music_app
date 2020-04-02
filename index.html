@@ -18,14 +18,15 @@
                     <source id="source" src="songs/Kho Gaye Hum Kahan.mp3">
                 </audio>
             </div>
+            <progress id="progress" value="0" max="100"></progress><br>
             <div class="bottom">
-                <progress id="progress" value="0" max="100"></progress><br>
+                
                 <i class="fa fa-play-circle fa-2x" style="color:black;" onclick="play_pause()"></i>
                 
                 
-                <i class="fa fa-volume-down fa-2x"></i>
-                <input type="range" id="volume" value="0" min="0" max="1" step="0.001">
-                <i class="fa fa-volume-up fa-2x"></i>
+                <i class="fa fa-volume-up fa-2x" onclick="displayVolume()"></i>
+                <input type="range" id="volume" oninput="volume()" value="0.5" min="0" max="1" step="0.001">
+                
             </div>
 
             <div class="middle"></div>
